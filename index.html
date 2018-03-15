@@ -43,22 +43,29 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_home" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#video">Video</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_video" href="#video">Video</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#vision">Vision</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_vision" href="#vision">Vision</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#whitepaper">Whitepaper</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_whitepaper" href="#whitepaper">Whitepaper</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_team" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger" id="t_nav_contact" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nohover" style="" href="#">
+                          <span style="margin: 0" id="flag_en">🇺🇸</span> |
+                          <span style="margin: 0" id="flag_es">🇪🇸</span> |
+                          <span style="margin: 0" id="flag_ru">🇷🇺</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +75,7 @@
 
 
     <!-- START SLIDER STATIC -->
-    <section id="home" class="home-static-1 register section-back-image" data-background="assets/img/bg/home-static-xbv.jpg">\
+    <section id="home" class="home-static-1 register section-back-image" data-background="assets/img/bg/home-static-xbv.jpg">
 
         <div class="ray ray-vertical y-100 x-50 ray-rotate-135 laser-blink hidden-sm hidden-xs"></div>
         <div class="ray ray-horizontal y-35 x-0 ray-rotate-45 laser-blink hidden-sm hidden-xs"></div>
@@ -78,11 +85,11 @@
                 <!--- END COL -->
                 <div class="home-static-middle col-lg-6 col-md-12 col-sm-12 col-12 text-left">
                     <div class="message-slider-text">
-                        <h1>XBV Token Sale</h1>
+                        <h1 id="t_xbv_token_sale">XBV Token Sale</h1>
                     </div>
 
                     <!-- Blue -->
-                    <h6 class="angle-round">Token Sales
+                    <h6 class="angle-round"><span id="t_token_sales">Token Sales</span>
                         <span style="margin-left: 78px; color:#ccc;"></span>
                         <span class="number">70,000,000 XBV</span>
                     </h6>
@@ -91,7 +98,7 @@
                     </div>
 
                     <!-- Green -->
-                    <h6 class="angle-round">Distributed
+                    <h6 class="angle-round"><span id="t_distributed">Distributed</span>
                         <span style="margin-left: 126px; color:#ccc;"></span>
                         <span class="number">70,000,000 XBV</span>
                     </h6>
@@ -99,11 +106,11 @@
                         <div class="progress-bar background-two" style="background-color: #4190c8 !important;width:60.09% !important;">42,068,441</div>
                     </div>
 
-                    <h6 class="angle-round">Current Price:
+                    <h6 class="angle-round"><span id="t_current_price">Current Price</span>:
                         <span style="margin-left: 126px; color:#ccc;">$2.00 USD</span>
                         <span class="number"></span>
                     </h6>
-                    <h6 class="angle-round">Contributors:
+                    <h6 class="angle-round"><span id="t_contributors">Contributors</span>:
                         <span style="margin-left: 126px; color:#ccc;">55,000</span>
                         <span class="number"></span>
                     </h6>
@@ -111,7 +118,7 @@
                     <div class="boucher-promo" style="margin-top: 30px;">
                         <div class="boucher-order">
                             <a href="https://forkdelta.github.io/#!/trade/XBV-ETH" class="btn-call" style="background-color: #00aa8e; border: 1px solid #00836D;" target="_blank">
-                                <i class="fa fa-dollar"></i> Buy XBV Now! @ ForkDelta</a>
+                                <i class="fa fa-dollar"></i> <span id="t_buy_now" style="margin-right: 0; margin-left: 0">Buy XBV Now! @ ForkDelta</span></a>
                         </div>
                     </div>
                 </div>
@@ -120,8 +127,8 @@
 
                     <div class="registration-wrapper animated-calc hidden-sm">
                         <div class="form-title">
-                            <h2>XBV Newsletter</h2>
-                            <h5>Sign Up Now!</h5>
+                            <h2 id="t_xbv_newsletter">XBV Newsletter</h2>
+                            <h5 id="t_sign_up_now">Sign Up Now!</h5>
                         </div>
 
                         <form>
@@ -135,7 +142,7 @@
                                     <span class="input_bar"></span>
                                 </div>
                                 <div class="form-group col-lg-12">
-                                    <button type="submit" class="btn regisbtn">Sign Up!
+                                    <button type="submit" class="btn regisbtn" id="t_sign_up">Sign Up!
                                     </button>
                                 </div>
                                 <small style="margin: 0 auto"></small>
@@ -181,9 +188,9 @@
     <section class="road-map" id="vision">
         <div class="container outer clearfix">
             <div class="section-title">
-                <h3 class="text-center">Vision</h3>
+                <h3 class="text-center" id="t_vision">Vision</h3>
                 <span></span>
-                <p class="text-center">
+                <p class="text-center" id="t_vision_text">
                     BlockVentures assists organizations in the integration and execution of blockchain technology systems at the most critical
                     application points up and down the organization's value chain. This blockchain integration introduces
                     tremendous benefits related to transparency, security, and logistics efficiencies management functionality.
@@ -265,7 +272,7 @@
     <section id="whitepaper" class="section-padding section-back-image" data-background="assets/img/bg/promo-bg.jpg">
         <div class="container">
             <div class="section-title text-center">
-                <h3 class="white">Whitepaper</h3>
+                <h3 class="white" id="t_whitepaper">Whitepaper</h3>
                 <span></span>
                 <p class="white"></p>
             </div>
@@ -274,7 +281,7 @@
                     <div class="boucher-promo">
                         <div class="boucher-order">
                             <a href="https://www.xbv.io/documents/whitepaper.pdf" class="btn-call">
-                                <i class="fa fa-download"></i> Download Whitepaper</a>
+                                <i class="fa fa-download"></i> <span id="t_download_whitepaper" style="margin: 0">Download Whitepaper</span></a>
                         </div>
                     </div>
                 </div>
@@ -294,7 +301,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h3>Our Team</h3>
+                        <h3 id="t_out_team">Our Team</h3>
                         <span></span>
                         <p></p>
                     </div>
@@ -305,7 +312,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Al Rosario is an internationally recognized entrepreneur and New York native. Al brings over
+                            <p id="t_albert_rosario_bio">Al Rosario is an internationally recognized entrepreneur and New York native. Al brings over
                                 35 years of expertise in strategic planning, tactical execution, and business operations
                                 leadership. Recognized as a leader in results-driven management with vast experience in marketing
                                 and distribution, he brings key relationships across a wide variety of industries to the
@@ -317,7 +324,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Albert Rosario</h4>
-                                <p>CEO / Founder</p>
+                                <p id="t_albert_rosario_title">CEO / Founder</p>
                             </div>
                         </div>
                     </div>
@@ -325,7 +332,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Scott Magers is an entrepreneur, international businessman and a private investor. Scott has
+                            <p id="t_scott_magers_bio">Scott Magers is an entrepreneur, international businessman and a private investor. Scott has
                                 developed over 50 products in the wholesale/retail trading sphere, with experience in online
                                 and offline business since 1998. In 2001, he created a top-selling health beverage with distribution
                                 in over 40 countries worldwide.</p>
@@ -336,7 +343,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Scott Magers</h4>
-                                <p>Executive VP / Co-Founder</p>
+                                <p id="t_scott_magers_title">Executive VP / Co-Founder</p>
                             </div>
                         </div>
                     </div>
@@ -344,7 +351,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Martin Mendoza graduated with a PhD in Law from the International Institute of Law and the State
+                            <p id="t_martin_mendoza_bio">Martin Mendoza graduated with a PhD in Law from the International Institute of Law and the State
                                 & a Master’s in Criminal Law from the University of Guadalajara Faculty of Law. He currently
                                 serves on the National Federation of Associations of Lawyers, A.C. as well as the Association
                                 of Lawers in Acapulco, A.C.</p>
@@ -355,7 +362,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Martin Mendoza</h4>
-                                <p>Chief Legal Officer</p>
+                                <p id="t_martin_mendoza_title">Chief Legal Officer</p>
                             </div>
                         </div>
                     </div>
@@ -368,7 +375,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>John Eisberg has over 22 years of experience in development, programming and management of multiple
+                            <p id="t_john_eisberg_bio">John Eisberg has over 22 years of experience in development, programming and management of multiple
                                 IT projects worldwide. From Beijing, China to Seattle, Washington, John has built cloud servers,
                                 managed software architecture teams and has written mobile apps. John heads up the BlockVentures
                                 Blockchain development team.</p>
@@ -379,7 +386,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>John Eisberg</h4>
-                                <p>CTO</p>
+                                <p id="t_john_eisberg_title">CTO</p>
                             </div>
                         </div>
                     </div>
@@ -392,7 +399,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Sofia has over 20 years of experience in health care. She holds numerous diplomas (including
+                            <p id="t_dr_sofia_camargo_bio">Sofia has over 20 years of experience in health care. She holds numerous diplomas (including
                                 Master's in education). She has worked as an ER doctor & a secretariat of National Defense,
                                 and also serves as the President of the Bioethics Committee. She worked at the military hospital
                                 in Jalisco for 21 years.</p>
@@ -403,7 +410,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Dr. Sofia Camargo</h4>
-                                <p>Director of Government Affairs</p>
+                                <p id="t_dr_sofia_camargo_title">Director of Government Affairs</p>
                             </div>
                         </div>
                     </div>
@@ -411,7 +418,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Jose comes from an sport backround. He played about 10 years of profesional baseball. He also
+                            <p id="t_jose_miguel_rivas_bio">Jose comes from an sport backround. He played about 10 years of profesional baseball. He also
                                 has over 5 years of experience in managaing operations. He holds a bachellors of science
                                 in International Business and a minor in Economics.</p>
                         </div>
@@ -421,7 +428,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Jose Miguel Rivas</h4>
-                                <p>Director of Operations, Mexico</p>
+                                <p id="t_jose_miguel_rivas_title">Director of Operations, Mexico</p>
                             </div>
                         </div>
                     </div>
@@ -429,7 +436,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Jeff Bolding is a IT Project Manager, with 18 + years experience implementing Non-Cloud and Cloud
+                            <p id="t_jeff_bolding_bio">Jeff Bolding is a IT Project Manager, with 18 + years experience implementing Non-Cloud and Cloud
                                 based Infor/Lawson ERP Software for mid size to large companies. He is also a Multi-Talented
                                 Programmer and SQL database experienced. Prior, to his IT experience, for 10+ years Jeff
                                 managed Accounting Departments in mid to large size companies. Jeff has a BBA degree majoring
@@ -442,7 +449,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Jeff Bolding</h4>
-                                <p>IT Project Manager</p>
+                                <p id="t_jeff_bolding_title">IT Project Manager</p>
                             </div>
                         </div>
                     </div>
@@ -455,7 +462,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>With a long and extensive experience, Leon is an expert in administration and business development.
+                            <p id="t_leon_martinez_bio">With a long and extensive experience, Leon is an expert in administration and business development.
                                 He holds a Master degree in Management & Generation of Innovation from the University of
                                 Cambridge, where he also recieved a diploma for Strategic Innovation. Leon is also certified
                                 by ISACA COBIT</p>
@@ -466,7 +473,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Leon Martinez</h4>
-                                <p>Director, Sales &amp; Business Administration</p>
+                                <p id="t_leon_martinez_title">Director, Sales &amp; Business Administration</p>
                             </div>
                         </div>
                     </div>
@@ -474,7 +481,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Jose holds a degree in Business Administration from Vocational Institute Enrique Díaz de León,
+                            <p id="t_jose_luis_cisneros_bio">Jose holds a degree in Business Administration from Vocational Institute Enrique Díaz de León,
                                 and has a diverse portfolio of experience, working as a teacher at the Free College of University
                                 Studies, as a Credit & Collections manager, as well as an Administrator & Real Estate Advisor.</p>
                         </div>
@@ -484,7 +491,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Jose Luis Cisneros</h4>
-                                <p>Director of Administration, Mexico</p>
+                                <p id="t_jose_luis_cisneros_title">Director of Administration, Mexico</p>
                             </div>
                         </div>
                     </div>
@@ -492,7 +499,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Brenda is an Administrative Manager, Accountant and Auditor with a wide experience in those areas.
+                            <p id="t_brenda_martinez_bio">Brenda is an Administrative Manager, Accountant and Auditor with a wide experience in those areas.
                                 She develops financial policies, implements control processes, maintains and deploys certifications,
                                 as well as the audit area.</p>
                         </div>
@@ -502,7 +509,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Brenda Martinez</h4>
-                                <p>CFO / CPA</p>
+                                <p id="t_brenda_martinez_title">CFO / CPA</p>
                             </div>
                         </div>
                     </div>
@@ -515,7 +522,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Mr. O'Leary has created, grown and sold multiple businesses over his 25 year career. He has also
+                            <p id="t_robert_oleary_bio">Mr. O'Leary has created, grown and sold multiple businesses over his 25 year career. He has also
                                 provided sales and strategic consulting and built managed services portfolios for a range
                                 of companies. Mr. O'Leary supports business, partnership and revenue generation efforts and
                                 evaluations for both BlockVentures and BVC. Mr. O'Leary earned a BS in Mechanical Engineering
@@ -528,7 +535,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Robert O'Leary</h4>
-                                <p>Business Development</p>
+                                <p id="t_robert_oleary_title">Business Development</p>
                             </div>
                         </div>
                     </div>
@@ -536,7 +543,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Tim Ellis Since earning his Masters Degree from Azusa Pacific University, Tim has been branding
+                            <p id="t_tim_ellis_bio">Tim Ellis Since earning his Masters Degree from Azusa Pacific University, Tim has been branding
                                 and producing meaningful content for over 30 years. Tim is the founding partner of Rivet
                                 Design and Production serving clients including the FOX networks, ABC, NBC, PBS, Warner Bros.,
                                 MGM, and National Geographic. Tim has also produced for advertising clients such as Saatchi
@@ -549,7 +556,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Tim Ellis</h4>
-                                <p>Brand Management</p>
+                                <p id="t_tim_ellis_title">Brand Management</p>
                             </div>
                         </div>
                     </div>
@@ -582,7 +589,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Dr. Brom Mahbod, after receiving his Ph.D. degree in Electrical and Computer Engineering, joined
+                            <p id="t_dr_brom_mahbod_bio">Dr. Brom Mahbod, after receiving his Ph.D. degree in Electrical and Computer Engineering, joined
                                 the research team at Hewlett Packard Laboratories in Palo Alto, CA, working on the first
                                 Object Oriented Database. The effort resulted in the first commercially available Object
                                 Oriented Database (OODB) from HP several years later.</p>
@@ -593,7 +600,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Dr. Brom Mahbod</h4>
-                                <p>Technolgy Advisor</p>
+                                <p id="t_dr_brom_mahbod_title">Technolgy Advisor</p>
                             </div>
                         </div>
                     </div>
@@ -601,7 +608,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Dean Anastos is a software engineer. Dean found that software development was the niche for him.
+                            <p id="t_dean_anastos_bio">Dean Anastos is a software engineer. Dean found that software development was the niche for him.
                                 With years of experience working with both corporate level and local business clients, Dean
                                 is looking to continually extend his programming portfolio to companies looking to grow in
                                 the online marketing world.</p>
@@ -612,7 +619,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Dean Anastos</h4>
-                                <p>Blockchain Advisor</p>
+                                <p id="t_dean_anastos_title">Blockchain Advisor</p>
                             </div>
                         </div>
                     </div>
@@ -620,7 +627,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Jit Singh founded Business Technology Services in early 2000. His background in technology extends
+                            <p id="t_jit_singh_bio">Jit Singh founded Business Technology Services in early 2000. His background in technology extends
                                 well into his youth when his dad first bought him a Commodore 64. If there is a problem related
                                 to IT, Jagdeash will find the solution. His certifications in Cisco and Microsoft bring great
                                 value to our company.</p>
@@ -631,7 +638,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Jit Singh</h4>
-                                <p>Security &amp; Database Technology</p>
+                                <p id="t_jit_singh_title">Security &amp; Database Technology</p>
                             </div>
                         </div>
                     </div>
@@ -644,7 +651,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="single-testimonial">
                         <div class="testimonial-box">
-                            <p>Mr. Terry is a member of the firm’s Regulatory Practice Group, advising and representing broker-dealers,
+                            <p id="t_bob_terry_bio">Mr. Terry is a member of the firm’s Regulatory Practice Group, advising and representing broker-dealers,
                                 investment advisors and individuals in regulatory, compliance, and enforcement. He also provides
                                 advice and representation to clients in connection with other corporate matters, including
                                 raising capital.</p>
@@ -655,7 +662,7 @@
                             </div>
                             <div class="testimonial-box-info-text">
                                 <h4>Bob Terry</h4>
-                                <p>U.S. Legal Advisor</p>
+                                <p id="t_bob_terry_title">U.S. Legal Advisor</p>
                             </div>
                         </div>
                     </div>
@@ -675,7 +682,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h3>Contact us</h3>
+                        <h3 id="t_contact_us">Contact us</h3>
                         <span></span>
                         <p></p>
                     </div>
@@ -733,7 +740,7 @@
         <!--Footer Bottom-->
         <div class="footer-bottom">
             <div class="auto-container">
-                <div class="copyright-text">Copyright © 2018 BlockVenture El Sol No. 2943 Col. Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico.
+                <div class="copyright-text" id="t_copyright">Copyright © 2018 BlockVenture El Sol No. 2943 Col. Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico.
                     All Rights Reserved.</div>
             </div>
         </div>
@@ -745,12 +752,15 @@
 
     <!-- Latest jQuery -->
     <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/jquery.i18n.min.js"></script>
+    <!-- translations -->
+    <script src="assets/js/translations.js"></script>
     <!-- popper js -->
     <script src="assets/js/popper.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/highcharts.js"></script>
-    <script src="assets/js/create-highcarts.js"></script>
+    <!--<script src="assets/js/highcharts.js"></script>-->
+    <!--<script src="assets/js/create-highcarts.js"></script>-->
 
 
     <!-- cd-headline js -->

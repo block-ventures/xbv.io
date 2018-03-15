@@ -64,6 +64,9 @@ a:hover {
     color: #005ff4;
     text-decoration: none;
 }
+.nohover:hover {
+  color: #fff !important;
+}
 a:focus {
     outline: none;
     text-decoration: none;

@@ -23,6 +23,27 @@ Table Of Contents end
 
     jQuery(document).on('ready', function() {
 
+      $.i18n.load(i18n_en_dict);
+      i18n_xbv.translate();
+
+      $('#flag_en').on('click', function() {
+        $.i18n.unload();
+        $.i18n.load(i18n_en_dict);
+        i18n_xbv.translate();
+      });
+
+      $('#flag_es').on('click', function() {
+        $.i18n.unload();
+        $.i18n.load(i18n_es_dict);
+        i18n_xbv.translate();
+      });
+
+      $('#flag_ru').on('click', function() {
+        $.i18n.unload();
+        $.i18n.load(i18n_ru_dict);
+        i18n_xbv.translate();
+      });
+
         /* PRELOADER JS */
 
 		$(window).on('load', function() {
@@ -204,14 +225,5 @@ Table Of Contents end
     /* WOW ANIMATION JS */
 
     new WOW().init();
-
-	/*  SNOW FALL JS */
-
-	$('.home-static-2').snowfall({
-	  round: true,
-	  flakeCount : 300,
-	  maxSpeed : 5,
-	  maxSize : 5
-	});
 
 })(jQuery);
