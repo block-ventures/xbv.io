@@ -44,6 +44,15 @@ Table Of Contents end
         i18n_xbv.translate();
       });
 
+      var form = $('#newsletter-form');
+
+      if ( form.length > 0 ) {
+        $('#newsletter-form button[type="submit"]').bind('click', function( event ) {
+          if ( event ) event.preventDefault();
+          register(form);
+        });
+      };
+
         /* PRELOADER JS */
 
 		$(window).on('load', function() {
@@ -227,3 +236,32 @@ Table Of Contents end
     new WOW().init();
 
 })(jQuery);
+
+function register(form) {
+  $.ajax({
+    type: 'get',
+    url: 'https://xbv.us17.list-manage.com/subscribe/post-json?u=118b20255261db2d8aa7e3501&id=704be289d6&c=?',
+    data: form.serialize(),
+    cache: false,
+    dataType: 'json',
+    contentType: "application/json; charset=utf-8",
+    error: function(err) { registerFailed(); },
+    success: function(data) {
+      if (data.result != "success") {
+        registerFailed();
+      } else {
+        registerSuccess();
+      }
+    }
+  });
+};
+
+function registerSuccess() {
+  $('#form-content').hide();
+  $('#form-success').show();
+};
+
+function registerFailed() {
+  $('#form-content').hide();
+  $('#form-error').show();
+};
