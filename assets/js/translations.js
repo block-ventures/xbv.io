@@ -58,11 +58,11 @@ var i18n_en_dict = {
 
   "t_contact_us": "Contact Us",
   "t_send_message": "Send Message",
-  "t_copyright": "Copyright © 2018 BlockVenture El Sol No. 2943 Col. Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico. All Rights Reserved."
+  "t_copyright": "Copyright © 2018 BlockVentures El Sol No. 2934 Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico. All Rights Reserved."
 };
 
 var i18n_es_dict = {
-  "t_nav_home": "Mapa Vial",
+  "t_nav_home": "Inicio",
   "t_nav_video": "Vídeo",
   "t_nav_vision": "Visión",
   "t_nav_whitepaper": "Libro Blanco",
@@ -121,7 +121,7 @@ var i18n_es_dict = {
 
   "t_contact_us": "Contáctenos",
   "t_send_message": "Enviar Mensaje",
-  "t_copyright": "© BlockVenture El Sol No. 2943 Col. Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico",
+  "t_copyright": "© BlockVentures El Sol No. 2934 Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico",
 };
 
 var i18n_ru_dict = {
@@ -184,7 +184,7 @@ var i18n_ru_dict = {
 
   "t_contact_us": "контакт",
   "t_send_message": "",
-  "t_copyright": "© BlockVenture El Sol No. 2943 Col. Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico",
+  "t_copyright": "© BlockVentures El Sol No. 2934 Jardines del Bosque 44520 Guadalajara, Jalisco, Mexico",
 };
 
 var i18n_xbv = {
