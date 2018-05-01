@@ -248,8 +248,12 @@ function register(form) {
     error: function(err) { registerFailed(); },
     success: function(data) {
       if (data.result != "success") {
-        registerFailed();
+
+        var replacedMsg = data.msg.replace("list Financial", "this list");
+        registerFailedWithMessage(replacedMsg);
+
       } else {
+
         registerSuccess();
       }
     }
@@ -263,5 +267,10 @@ function registerSuccess() {
 
 function registerFailed() {
   $('#form-content').hide();
+  $('#form-error').show();
+};
+function registerFailedWithMessage(message) {
+  $('#form-content').hide();
+  $('#form-error-message').html(message);
   $('#form-error').show();
 };
